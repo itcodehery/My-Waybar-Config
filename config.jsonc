@@ -10,9 +10,25 @@
   "margin-top": 2,
   "modules-left": [ "group/center4" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/center3", "group/center2" ],
+  "modules-right": [ "group/center3", "group/battery", "group/hardware", "group/center2" ],
 
 // GROUPS MODULE
+
+  "group/hardware": {
+    "orientation": "inherit",
+    "modules": [
+      "network",
+      "bluetooth",
+      "pulseaudio"
+    ]
+  },
+
+  "group/battery": {
+    "orientation": "inherit",
+    "modules": [
+      "battery"
+    ]
+  },
 
   "group/center2": {
 	"orientation": "inherit",
@@ -37,7 +53,6 @@
     "custom/screenrecording-indicator", 
     "custom/update", 
     // "custom/separator#dot",
-    "custom/separator#blank",
     "group/media-pill"
 	]
 },
@@ -65,13 +80,7 @@
 	"orientation": "inherit",
 	"modules": [
     "custom/omarchy",
-    "custom/active_window",
-    "custom/separator#blank",
-    "custom/separator#dot",
-    "battery",
-    "network",
-    "bluetooth",
-    "pulseaudio"
+    "custom/active_window"
 	]
 },
 
