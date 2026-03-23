@@ -10,11 +10,11 @@
   "margin-top": 2,
   "modules-left": [ "group/center4" ],
   "modules-center": [ "hyprland/workspaces" ],
-  "modules-right": [ "group/center3", "group/battery", "group/hardware", "group/center2" ],
+  "modules-right": [ "group/center3", "group/battery", "group/htray", "group/center2" ],
 
 // GROUPS MODULE
 
-  "group/hardware": {
+  "group/htray": {
     "orientation": "inherit",
     "modules": [
       "network",
